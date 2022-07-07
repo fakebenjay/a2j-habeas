@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graphics template</title>
+  <script type="text/javascript" src="https://assets.law360news.com/1484000/1484862/d3.v5.min.js"></script>
+  <script src="https://assets.law360news.com/1484000/1484862/numeral.min.js"></script>
+  <script src="tooltippi.js"></script>
+  <script src="offsetting.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="law360.css">
+  <!-- <link rel="stylesheet" href="law360.css"> -->
+  </link>
+</head>
+
+<body>
+  <div id="article-body">
+    <div class="d3-container" id="chart-1">
+      <div style="width:100%;height:6px;background-color:#b01116;display:block;"></div>
+      <span class="hed">Capital Sentence Reversals</span>
+      <p class="dek">The number of reversed death sentences has kept relatively steady despite the passage of the Antiterrorism and Effective Death Penalty Act of 1996, which was touted as a way to bring finality to state criminal proceedings.
+        Reversals briefly peaked in the early 2000s following two Supreme Court decisions that limited the application of the death penalty. The reversals decline since 2010 coincides with a drop in death sentences along the same period.</p>
+      <div class="chart"></div>
+      <div id="legend-box">
+        <ul class="legend">
+          <li class="reversal">
+            <div class="legend-sq"></div> Reversals
+          </li>
+          <li class="execution">
+            <div class="legend-sq">
+            </div> Executions
+          </li>
+        </ul>
+      </div>
+      <span class="bottom"><span class="source">Source: Frank R. Baumgartner, University of North Carolina at Chapel Hill</span><span class="gfx-logo"><img src="Law360-A2J@2x.png" /></span></span>
+    </div>
+    <script type="text/javascript" src="line1.js" defer></script>
+    <div class="d3-container" id="chart-2">
+      <div style="width:100%;height:6px;background-color:#b01116;display:block;"></div>
+      <span class="hed">Average Elapsed Time Between Death Sentence and Execution</span>
+      <p class="dek">The average time between a capital sentence and execution has more than tripled since the 1980s, despite the enactment of the Antiterrorism and Effective Death Penalty Act of 1996, which sought to curtail federal review of state
+        death penalty cases to ensure a more swift carrying out of death sentences.</p>
+      <div class="chart"></div>
+      <div id="legend-box">
+        <ul class="legend">
+          <li class="reversal">
+            <div class="legend-sq"></div> Average time between sentencing and execution
+          </li>
+          <li class="execution">
+            <div class="legend-sq">
+            </div> Executions
+          </li>
+        </ul>
+      </div>
+      <span class="bottom"><span class="source">Source: Bureau of Justice Statistics, National Prisoner Statistics program (NPS-8), 2020</span><span class="gfx-logo"><img src="Law360-A2J@2x.png" /></span></span>
+    </div>
+    <script type="text/javascript" src="line2.js" defer></script>
+  </div>
+</body>
+
+</html>
