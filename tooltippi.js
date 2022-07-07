@@ -10,7 +10,7 @@ function tipTextLine2(values) {
   var monthsPhrase = !!months ? `, ${months} months` : ''
   var timeSentence = values.year > 1983 ? `, with an average of <strong style="background-color:#132a43;padding: 0 2px;color:white;">${years} years${monthsPhrase}</strong> between sentencing and execution` : ''
   return `<span class='quit'>x</span><div class="tooltip-container">
-  <div>There ${values.reversal == 1 ? 'was':'were'} <strong style="background-color:#b01116;padding: 0 2px;color:white;">${numeral(values.executions).format('0,0')} execution${values.execution == 1 ? '':'s'}</strong> in <strong>${values.year}</strong> at the state level${timeSentence}.</div>
+  <div>There ${values.executions == 1 ? 'was':'were'} <strong style="background-color:#b01116;padding: 0 2px;color:white;">${numeral(values.executions).format('0,0')} execution${values.executions == 1 ? '':'s'}</strong> in <strong>${values.year}</strong> at the state level${timeSentence}.</div>
   </div>`
 }
 

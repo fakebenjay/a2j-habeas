@@ -136,7 +136,7 @@ d3.csv("data-2.csv")
       });
 
     svg2.select('.lines')
-      .data([csv.slice(5)])
+      .data([csv.slice(7)])
       .append("path")
       .attr("class", "line months")
       .attr("d", (d) => {
@@ -158,7 +158,7 @@ d3.csv("data-2.csv")
 
 
     svg2.selectAll(".lines")
-      .data(csv.slice(5))
+      .data(csv.slice(7))
       .enter()
       .append("circle") // Uses the enter().append() method
       .attr("class", d => `dot months yr-${d.year}`) // Assign a class for styling
