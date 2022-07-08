@@ -225,15 +225,16 @@ svg {
 
 .bottom {
   width: 100%;
-  display: flex;
+  display: inline;
   overflow: auto;
   align-items: baseline;
+  vertical-align: baseline;
 }
 
 .source {
   display: inline-block;
   width: 75%;
-  padding: 5px;
+  padding: 1%;
   font-size: 10pt;
 }
 
@@ -250,8 +251,7 @@ svg {
   display: inline-block;
   width: 25%;
   text-align: right;
-  padding: 5px;
-  float: right;
+  padding: 1%;
 }
 
 .gfx-logo img {
