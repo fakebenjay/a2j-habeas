@@ -33,6 +33,7 @@ var yAxis1 = d3.axisLeft(yScale1)
 var yGrid1 = d3.axisLeft(yScale1)
   .tickSize(-width + margin.right + margin.left, 0, 0)
   .tickFormat("")
+  .ticks(30)
 
 // Render Y grid
 svg1.append("g")

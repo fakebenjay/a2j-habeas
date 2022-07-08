@@ -311,6 +311,19 @@ svg {
   background-color: #132a43;
 }
 
+@media screen and (min-width: 500px) {
+  .A2J-sidebar {
+    width: 320px;
+    border-left: 6px solid #b01116;
+    background-color: #132a43;
+    float: right;
+    padding: 15px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: #ffffff
+  }
+}
+
 @media screen and (max-width: 500px) {
   .arrow-right {
     margin-top: -webkit-calc(35% - 35px);
@@ -319,6 +332,15 @@ svg {
     /* margin-bottom: -webkit-calc(50% - 35px);
     margin-bottom: -moz-calc(50% - 35px);
     margin-bottom: calc(50% - 35px); */
+  }
+
+  .A2J-sidebar {
+    width: 100%;
+    border-left: 6px solid #b01116;
+    background-color: #132a43;
+    padding: 15px;
+    margin-bottom: 20px;
+    color: #ffffff;
   }
 }
 
