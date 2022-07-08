@@ -7,6 +7,48 @@ body {
   color: black;
 }
 
+.chart-grid {
+  width: 100%;
+  float: none;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-row: auto auto;
+}
+
+.chart-sect {
+  padding: 10px;
+}
+
+.arrow-right {
+  border-top: 35px solid transparent;
+  border-bottom: 35px solid transparent;
+  background-color: none;
+  float: left;
+  display: block;
+  /* margin-top: -webkit-calc(50% - 35px);
+  margin-top: -moz-calc(50% - 35px);
+  margin-top: calc(50% - 35px);
+  margin-bottom: -webkit-calc(50% - 35px);
+  margin-bottom: -moz-calc(50% - 35px);
+  margin-bottom: calc(50% - 35px); */
+}
+
+.arrow-red {
+  border-left: 35px solid #b01116;
+}
+
+.arrow-blue {
+  border-left: 35px solid #132a43;
+}
+
+.chart-sect span {
+  float: right;
+  height: 100%;
+  width: -webkit-calc(100% - 40px);
+  width: -moz-calc(100% - 40px);
+  width: calc(100% - 40px);
+}
+
 .legend {
   overflow: visible;
   display: block;
@@ -267,6 +309,17 @@ svg {
 
 .reversal .legend-sq {
   background-color: #132a43;
+}
+
+@media screen and (max-width: 500px) {
+  .arrow-right {
+    margin-top: -webkit-calc(35% - 35px);
+    margin-top: -moz-calc(35% - 35px);
+    margin-top: calc(35% - 35px);
+    /* margin-bottom: -webkit-calc(50% - 35px);
+    margin-bottom: -moz-calc(50% - 35px);
+    margin-bottom: calc(50% - 35px); */
+  }
 }
 
 @media screen and (max-width: 767px) {
